@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personalcenter/personalcenter",
+    "pages/redpackrain/redpackrain"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fc3a3a",
+    "navigationBarTitleText": "红包雨",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#9db5d1",
+    "selectedColor": "#fc3a3a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home-wxz.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/redpackrain/redpackrain",
+        "text": "摇红包",
+        "iconPath": "images/redpack-wxz.png",
+        "selectedIconPath": "images/redpack.png"
+      },
+      {
+        "pagePath": "pages/personalcenter/personalcenter",
+        "text": "我的",
+        "iconPath": "images/wode-wxz.png",
+        "selectedIconPath": "images/wode.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

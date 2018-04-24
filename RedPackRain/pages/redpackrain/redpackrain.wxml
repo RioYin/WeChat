@@ -1,0 +1,27 @@
+<!--pages/redpack.wxml-->
+<view class="test-logo">
+    <image src="../../images/cpic-logo.png" class="logo-image" mode='aspectFit'></image>
+</view>
+
+
+<view class="userinfo">
+  <view class='userinfo-content'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<button class='activity-button activity-button-left'>
+  <text>活动规则</text>
+</button>
+
+<button class='activity-button activity-button-right' bindtap="clickTest">
+  <text>{{jilu}}</text>
+</button>
+
+<view class="test-bg">
+    <image src="../../images/shake1.png" class="bg-image"></image>
+</view>

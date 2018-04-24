@@ -1,0 +1,97 @@
+page{
+  background: #f2f1f1;
+}
+
+.container{
+  background: #fff;
+  padding:70rpx 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.container-service{
+  padding: 0 30rpx;
+  background: #fff;
+}
+
+ .service{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+  padding-bottom: 50rpx;
+}
+
+.service-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}  
+
+ .service-img{
+   width: 80%; 
+} 
+
+.service-text{
+  margin-top: -30rpx;
+  font-size: 12px;
+}
+
+.container-list{
+  margin-top: 30rpx;
+}
+
+.list-content{
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  padding: 0 30rpx;
+  border-top: 1px solid #f2f1f1;
+}
+
+.list-content-left{
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+}
+
+.list-content-right{
+  height: 100rpx;
+  line-height: 100rpx;
+  float: right;
+}
+
+.list-text{
+  margin-left: 10rpx;
+}
+
+.list-img{
+  width: 30rpx;
+}
+
+.list-desc{
+  color: #ccc;
+  font-size: 24rpx;
+  margin-top: -4rpx;
+}
+
+.list-content-next{
+  width: 22rpx;
+  margin-left: 10rpx;
+}

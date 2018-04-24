@@ -1,0 +1,34 @@
+<swiper class='swiper' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix" bindtap="jump"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{list}}">
+  <view class='list'>
+    <view class='list-son'>
+      <view class='list-title'>
+        <text>{{item.listTitle}}</text>
+      </view>
+      <block wx:for="{{item.listContent}}" wx:for-item="listContent">
+        <view>
+          <button class='list-content'>
+            <image class='list-content-icon' src='{{listContent.listContentIcon}}'></image>
+            <view class='list-content-introduce'>
+              <view class='list-content-introduce-title'>
+              <text>{{listContent.listContentIntroduceTitle}}</text>
+              </view>
+              <view class='list-content-introduce-desc'>
+              <text>{{listContent.listContentIntroduceDesc}}</text>
+              </view>
+            </view>
+            <image class='list-content-next' src='{{listContent.listContentNext}}'></image>
+          </button>
+        </view>
+      </block>
+    </view>
+  </view>
+</block>
